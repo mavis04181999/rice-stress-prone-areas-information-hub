@@ -23,11 +23,7 @@
 								<div>
 									<label class="block text-sm font-medium text-gray-700">Photo</label>
 									<div class="mt-1 flex items-center">
-										{{-- <span class="inline-block h-24 w-24 overflow-hidden rounded-full bg-gray-100">
-											<a target="_blank" href="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}">
-												<img id="img_page1_avatar" class="mb-3 rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
-											</a>
-										</span> --}}
+
 										<span class="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
 											<svg id="svg_page1_avatar" class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
 											  <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />

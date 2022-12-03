@@ -38,8 +38,8 @@
                 <section id="farmer-profile">
                     <div class="bg-white p-3 shadow-sm rounded-sm">
                         <div class="flex flex-col items-center pb-10">
-                            <a target="_blank" href="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}">
-                                <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
+                            <a target="_blank" href="{{ is_null($farmer->profile_img) ? asset('images/farmer/avatar/default.png') : asset('images/farmer/avatar/'.$farmer->profile_img) }}">
+                                <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('images/farmer/avatar/default.png') : asset('images/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
                             </a>
     
                             {{-- <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg" alt="Bonnie image"/> --}}
@@ -163,8 +163,8 @@
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Signature </div>
                                     <div class="px-4 py-2 font-bold">
-                                        <a target="_blank" href="{{ is_null($farmer->signature) ? asset('storage/farmer/signature/default.png') : asset('storage/farmer/signature/'.$farmer->signature) }}">
-                                            <img class="mb-3 w-full h-24 rounded-lg shadow-lg" src="{{ is_null($farmer->signature) ? asset('storage/farmer/signature/default.png') : asset('storage/farmer/signature/'.$farmer->signature) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
+                                        <a target="_blank" href="{{ is_null($farmer->signature) ? asset('images/farmer/signature/default.png') : asset('images/farmer/signature/'.$farmer->signature) }}">
+                                            <img class="mb-3 w-full h-24 rounded-lg shadow-lg" src="{{ is_null($farmer->signature) ? asset('images/farmer/signature/default.png') : asset('images/farmer/signature/'.$farmer->signature) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
                                         </a>
                                     </div>
                                 </div>

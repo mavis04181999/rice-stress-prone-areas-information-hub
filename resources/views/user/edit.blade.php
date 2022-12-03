@@ -31,8 +31,8 @@
 									<label class="block text-sm font-medium text-gray-700">Photo</label>
 									<div class="mt-1 flex items-center">
 										<span class="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
-											<a target="_blank" href="{{ is_null($user->profile_img) ? asset('storage/user/avatar/default.png') : asset('storage/user/avatar/'.$user->profile_img) }}">
-												<img id="img_user_avatar" class="mb-3 rounded-full shadow-lg" src="{{ is_null($user->profile_img) ? asset('storage/user/avatar/default.png') : asset('storage/user/avatar/'.$user->profile_img) }}" alt="{{ $user->firstName." ".$user->lastName}}"/>
+											<a target="_blank" href="{{ is_null($user->profile_img) ? asset('images/user/avatar/default.png') : asset('images/user/avatar/'.$user->profile_img) }}">
+												<img id="img_user_avatar" class="mb-3 rounded-full shadow-lg" src="{{ is_null($user->profile_img) ? asset('images/user/avatar/default.png') : asset('images/user/avatar/'.$user->profile_img) }}" alt="{{ $user->firstName." ".$user->lastName}}"/>
 											</a>
 										</span>
 										<input type="file" name="input_user_avatar" id="input_user_avatar" hidden>
@@ -43,8 +43,8 @@
 								<div>
 									<label class="block text-sm font-medium text-gray-700">Signature</label>
 									<div class="mt-1 flex items-center">
-										<a target="_blank" href="{{ is_null($user->signature) ? asset('storage/user/signature/default.png') : asset('storage/user/signature/'.$user->signature) }}">
-											<img id="img_user_signature" class="mb-3 h-12 w-36 rounded-lg shadow-lg" src="{{ is_null($user->signature) ? asset('storage/user/signature/default.png') : asset('storage/user/signature/'.$user->signature) }}" alt="{{ $user->firstName." ".$user->lastName}}"/>
+										<a target="_blank" href="{{ is_null($user->signature) ? asset('images/user/signature/default.png') : asset('images/user/signature/'.$user->signature) }}">
+											<img id="img_user_signature" class="mb-3 h-12 w-36 rounded-lg shadow-lg" src="{{ is_null($user->signature) ? asset('images/user/signature/default.png') : asset('images/user/signature/'.$user->signature) }}" alt="{{ $user->firstName." ".$user->lastName}}"/>
 										</a>
 										<input type="file" name="input_user_signature" id="input_user_signature" hidden>
 										<button onclick="userUploadSignature()" type="button" class="ml-5 rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Change</button>

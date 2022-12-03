@@ -54,10 +54,10 @@
 									<label class="block text-sm font-medium text-gray-700">Photo</label>
 									<div class="mt-1 flex items-center">
 										<span class="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
-											{{-- <img id="img_page1_avatar" class="mb-3  rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png')  : asset('storage/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/> --}}
+											{{-- <img id="img_page1_avatar" class="mb-3  rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('images/farmer/avatar/default.png')  : asset('images/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/> --}}
 
-											<a target="_blank" href="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}">
-												<img id="img_page1_avatar" class="mb-3 rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('storage/farmer/avatar/default.png') : asset('storage/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
+											<a target="_blank" href="{{ is_null($farmer->profile_img) ? asset('images/farmer/avatar/default.png') : asset('images/farmer/avatar/'.$farmer->profile_img) }}">
+												<img id="img_page1_avatar" class="mb-3 rounded-full shadow-lg" src="{{ is_null($farmer->profile_img) ? asset('images/farmer/avatar/default.png') : asset('images/farmer/avatar/'.$farmer->profile_img) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
 											</a>
 										</span>
 										<input type="file" name="input_page1_avatar" id="input_page1_avatar" hidden>
@@ -68,8 +68,8 @@
 								<div>
 									<label class="block text-sm font-medium text-gray-700">Signature</label>
 									<div class="mt-1 flex items-center">
-										<a target="_blank" href="{{ is_null($farmer->signature) ? asset('storage/farmer/signature/default.png') : asset('storage/farmer/signature/'.$farmer->signature) }}">
-											<img id="img_page1_signature" class="mb-3 h-12 w-36 rounded-lg shadow-lg" src="{{ is_null($farmer->signature) ? asset('storage/farmer/signature/default.png') : asset('storage/farmer/signature/'.$farmer->signature) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
+										<a target="_blank" href="{{ is_null($farmer->signature) ? asset('images/farmer/signature/default.png') : asset('images/farmer/signature/'.$farmer->signature) }}">
+											<img id="img_page1_signature" class="mb-3 h-12 w-36 rounded-lg shadow-lg" src="{{ is_null($farmer->signature) ? asset('images/farmer/signature/default.png') : asset('images/farmer/signature/'.$farmer->signature) }}" alt="{{ $farmer->firstName." ".$farmer->lastName}}"/>
 										</a>
 										<input type="file" name="input_page1_signature" id="input_page1_signature" hidden>
 										<button onclick="triggerPage1SignatureUpload()" type="button" class="ml-5 rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Change</button>
