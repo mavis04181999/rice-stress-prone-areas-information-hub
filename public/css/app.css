@@ -929,11 +929,6 @@ select {
 .min-w-full {
   min-width: 100%;
 }
-.min-w-max {
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1538,10 +1533,6 @@ select {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1553,6 +1544,10 @@ select {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-xl {
   font-size: 1.25rem;
