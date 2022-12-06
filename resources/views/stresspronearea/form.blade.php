@@ -2,10 +2,9 @@
 	<div class="flex min-h-screen bg-gray-100">
 		<div class="mt-4 mb-4 max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-			@include('components.messages')
-
-			<!-- Validation Errors -->
-			<x-auth-validation-errors class="mb-4" :errors="$errors" />
+            @include('components.messages')
+            
+            <x-auth-validation-errors class="mb-4" :errors="$errors"/>
 
 			<form action="{{ route('stresspronearea.store') }}" method="POST">
 				@csrf
