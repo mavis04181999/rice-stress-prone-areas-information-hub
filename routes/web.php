@@ -42,6 +42,8 @@ Route::controller(StressProneAreaController::class)->group(function()
 
     Route::patch('/stresspronearea/{stressProneArea}/update', 'update')->name('stresspronearea.update');
     Route::get('/stresspronearea/{stressProneArea}/restore', 'restore')->name('stresspronearea.restore');
+
+    Route::get('/stresspronearea/{stressProneArea}/delete', 'delete')->name('stresspronearea.delete');
     Route::delete('/stresspronearea/destroy/{stressProneArea}', 'destroy')->name('stresspronearea.destroy');
 });
 
@@ -99,7 +101,11 @@ Route::controller(FarmerController::class)->group(function()
 
     Route::get('/farmers/archive', 'archive')->name('farmer.archive');
     Route::get('/farmers/{farmer_id}/restore', 'restore')->name('farmer.restore');
+    Route::get('/farmers/{farmer_id}/delete', 'delete')->name('farmer.delete');
+
+
     Route::delete('/farmers/destroy/{farmer}', 'destroy')->name('farmer.destroy');
+
 
 });
 

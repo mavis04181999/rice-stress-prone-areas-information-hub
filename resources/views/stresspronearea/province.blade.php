@@ -8,8 +8,8 @@
             <x-auth-validation-errors class="mb-4" :errors="$errors"/>
 
             <div class="px-4 sm:px-0">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">City Stress Data</h3>
-                <p class="mt-1 text-sm text-gray-600">Something here.</p>
+                <h3 class="text-lg font-medium leading-6 text-gray-900">Province: {{ utf8_decode($province->province) }}</h3>
+                <p class="mt-1 text-sm text-gray-600">Cities Stress Data</p>
             </div>
 
             <hr class="mb-4">
@@ -25,8 +25,6 @@
                                 <th colspan="1"></th>
                             </tr>
                             <tr>
-                                <th class="text-sm">Province</th>
-                                <th class="text-sm">Province Code</th>
                                 <th class="text-sm">City</th>
                                 <th class="text-sm">City Code</th>
                                 <th class="text-sm">Barangay</th>
@@ -44,8 +42,6 @@
                                 @if ($citiesSPADetails->count() > 0)
                                     @foreach ($citiesSPADetails as $data)
                                     <tr>
-                                        <td class="text-xs">{{ $data->province }}</td>
-                                        <td class="text-xs">{{ $data->provincecode }}</td>
                                         <td class="text-xs">{{ $data->city }}</td>
                                         <td class="text-xs">{{ $data->citycode }}</td>
                                         <td class="text-xs">{{ $data->barangay }}</td>
@@ -94,8 +90,8 @@
             </div>
 
             <div class="px-4 sm:px-0">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">Municipality Stress Data</h3>
-                <p class="mt-1 text-sm text-gray-600">Something here.</p>
+                <h3 class="text-lg font-medium leading-6 text-gray-900">Province: {{ utf8_decode($province->province) }}</h3>
+                <p class="mt-1 text-sm text-gray-600">Municipalities Stress Data</p>
             </div>
 
             <hr class="mb-4">
@@ -111,8 +107,6 @@
                                 <th colspan="1"></th>
                             </tr>
                             <tr>
-                                <th class="text-sm">Province</th>
-                                <th class="text-sm">Province Code</th>
                                 <th class="text-sm">Municipality</th>
                                 <th class="text-sm">Municipality Code</th>
                                 <th class="text-sm">Barangay</th>
@@ -130,8 +124,6 @@
                                 @if ($municipalitiesSPADetails->count() > 0)
                                     @foreach ($municipalitiesSPADetails as $data)
                                     <tr>
-                                        <td class="text-xs">{{ $data->province }}</td>
-                                        <td class="text-xs">{{ $data->provincecode }}</td>
                                         <td class="text-xs">{{ $data->municipality }}</td>
                                         <td class="text-xs">{{ $data->municipalitycode }}</td>
                                         <td class="text-xs">{{ $data->barangay }}</td>

@@ -173,6 +173,18 @@ class StressProneAreaController extends Controller
         return redirect()->back()->with('success', 'Stress Data was restored successfully');
     }
 
+    public function delete(int $stressProneArea)
+    {
+        $stressProneArea = StressProneArea::withTrashed()->find($stressProneArea);
+
+        if ($stressProneArea && $stressProneArea->trashed())
+        {
+            $stressProneArea->forceDelete();
+        }
+
+        return back();
+    }
+
     public function dashboard()
     {
         $totalFarmers = StressProneArea::sum('totalFarmers');
@@ -200,6 +212,7 @@ class StressProneAreaController extends Controller
 
     public function province(Province $province)
     {
+
         $citiesSPADetails = StressProneArea::leftjoin('provinces', 'stresspronearea.province_id', '=', 'provinces.id')
                                     ->leftjoin('cities', 'stresspronearea.city_id', '=', 'cities.id')
                                     ->leftjoin('barangay', 'stresspronearea.barangay_id', '=', 'barangay.id')
@@ -232,7 +245,7 @@ class StressProneAreaController extends Controller
                                     )
                                     ->get();
 
-        return view('stresspronearea.province', compact('citiesSPADetails', 'municipalitiesSPADetails'));
+        return view('stresspronearea.province', compact('citiesSPADetails', 'municipalitiesSPADetails', 'province'));
     }
 
     public function archive()
